@@ -1,0 +1,124 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/tableGreen.jpeg");
+  background-size: cover;
+}
+
+h1 {
+  color: goldenrod;
+  font-family: 'Goldman', cursive;
+  font-size: 4em;
+  margin: 0.3em;
+  text-align: center;
+
+}
+
+.dealer_cards {
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game_message_container {
+  height: 8vh;
+}
+
+
+.player_cards {
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  height: 95%;
+  width: 150px;
+  border: 2px solid;
+  margin: 5px;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: attr(data-value);
+  font-size: 1.5rem;
+}
+
+.card::before {
+  top: 0.5em;
+  left: 0.5em;
+}
+
+.card::after{
+  bottom: 0.5em;
+  right: 0.5em;
+  transform: rotate(180deg);
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.flipped {
+  background-color: red;
+  border: 2px solid white;
+}
+
+.buttons_container {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  margin: 5px 20px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: rgba(218, 165, 32, 0.9);
+  border: 5px solid goldenrod;
+  cursor: pointer;
+
+}
+
+.invisible {
+  display: none;
+}
+
+.info_box {
+  position: absolute;
+  right: 20px;
+  top: 50vh;
+  width: 100px;
+  height: 100px;
+  background: white;
+}
+.player_sum {
+  color: White;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 10px;
+}
