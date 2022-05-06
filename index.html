@@ -13,25 +13,29 @@
   </head>
   <body>
     <h1>Black Jack</h1>
+    <div class="bank_container">
+      <p class="bank">Bank: $<span id="bank_el"></span></p>
+      <p class="bet">Bet: $<span id="bet_el"></span></p>
+    </div>
     <div id="dealer_cards_el" class="dealer_cards">
     </div>
     <div class="game_message_container">
-      <h2 class="game_message"></h2>
+      <h2 id="game_message" class="game_message_el"></h2>
     </div>
     <div id="player_cards_el" class="player_cards">
     </div>
-    <p class="player_sum" id="player_sum_el">Sum: </p>
+    <p class="player_sum" id="player_sum_el"></p>
     <div class="buttons_container">
-      <button class="button" id="start_round_el">Start Round</button>
+      <button class="button" id="start_round_el">Deal Cards</button>
       <button class="button invisible"id="hit_el">Hit</button>
       <button class="button invisible" id="stand_el">Stand</button>
+      <button class="button invisible" id="play_again">Play Again</button>
     </div>
-    
-    <div class="info_box">
-      <p id="player_sum_el">Sum: </p>
+    <div class="chips_container">
+      <button class="chip black_chip" id="chip_10">10</button>
+      <button class="chip red_chip"  id="chip_20">20</button>
+      <button class="chip blue_chip"   id="chip_50">50</button>
+      <button class="chip yellow_chip"  id="chip_100">100</button>
     </div>
-    
-    
-    
   </body>
 </html>
